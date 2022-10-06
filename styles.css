@@ -22,6 +22,18 @@
   
 }
 
+#titleBanner h1.tp {
+  font-size: 50px;
+  
+}
+
+#titleBanner h1.black {
+  color: #000000;
+  text-shadow: 0px 7px 7px #ffffff;
+}
+
+
+
  #subheading {
   font-family: 'Roboto Condensed', sans-serif;
   text-align: center;
@@ -85,11 +97,47 @@ ul, ol {
   
 }
 
-#recipieColumns { 
-  display: block;
-  background-color: white;
+#recipeColumns { 
+  padding: 2vh;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 6vh;
+  box-shadow: 0pxx 3pxx 3pxx rgba(0,0,0,0.7);
 
 }
+
+#recipeColumns div#ingredients { flex-basis: 28%; }
+#recipeColumns div#equipment { flex-basis: 20%; }
+#recipeColumns div#directions { flex-basis: 50%; }
+
+/* hide columns */
+
+#recipeColumns #ingredients ul,
+#recipeColumns #equipment ul,
+#recipeColumns #directions ol {
+  display: none; 
+}
+
+#recipeColumns #ingredients.tpShow ul,
+#recipeColumns #equipment.tpShow ul,
+#recipeColumns #directions.tpShow ol
+{
+  display: block;
+}
+
+
+
+#recipeColumns ul,
+#recipeColumns ol {
+  padding-left: 1.1em;
+}
+
+
+
+
+
+
+
 
 
 
